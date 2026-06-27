@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A0A0A" />
+
+  <!-- SEO -->
+  <title>Baspana Pro — Ремонт квартир и домов под ключ</title>
+  <meta name="description" content="Baspana Pro — профессиональный ремонт квартир и домов под ключ. Качество, доверие, гарантия результата. Более 200 реализованных проектов." />
+  <meta name="keywords" content="ремонт квартир, ремонт домов, ремонт под ключ, Baspana Pro, дизайн интерьера, строительство" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Baspana Pro — Ремонт под ключ" />
+  <meta property="og:description" content="Профессиональный ремонт квартир и домов. Качество, доверие, гарантия." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <style>
+    /* Scroll progress bar */
+    #scrollProgress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, #C9A96E, #A67C52);
+      z-index: 9999;
+      transition: width 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scrollProgress" role="progressbar" aria-hidden="true"></div>
+
+<!-- ====================================================
+     MOBILE MENU (full screen)
+     ==================================================== -->
+<nav id="mobileMenu" class="mobile-menu" aria-label="Мобильное меню" role="dialog">
+  <ul class="mobile-nav">
+    <li><a href="#about"        class="mobile-nav-link">О компании</a></li>
+    <li><a href="#services"     class="mobile-nav-link">Услуги</a></li>
+    <li><a href="#process"      class="mobile-nav-link">Этапы</a></li>
+    <li><a href="#portfolio"    class="mobile-nav-link">Портфолио</a></li>
+    <li><a href="#testimonials" class="mobile-nav-link">Отзывы</a></li>
+    <li><a href="#contact"      class="mobile-nav-link">Контакты</a></li>
+  </ul>
+  <a href="tel:+77001234567" class="mobile-phone">+7 (700) 123-45-67</a>
+</nav>
+
+<!-- ====================================================
+     HEADER
+     ==================================================== -->
+<header id="header" class="header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Baspana Pro — на главную">
+        <img
+          src="images/logo.png"
+          alt="Baspana Pro"
+          class="logo-img logo-img--color"
+          width="160"
+          height="48"
+          onerror="this.src='images/logo.svg'; this.onerror=null;"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about"        class="nav-link">О нас</a>
+        <a href="#services"     class="nav-link">Услуги</a>
+        <a href="#process"      class="nav-link">Этапы</a>
+        <a href="#portfolio"    class="nav-link">Портфолио</a>
+        <a href="#testimonials" class="nav-link">Отзывы</a>
+        <a href="#faq"          class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header-cta">
+        <a href="tel:+77001234567" class="header-phone" aria-label="Позвонить нам">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.76a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +7 (700) 123-45-67
+        </a>
+        <a href="#contact" class="btn btn-primary">
+          Бесплатный расчёт
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<!-- ====================================================
+     HERO SECTION
+     ==================================================== -->
+<section id="hero" class="hero" aria-label="Главный экран">
+  <div class="hero-bg" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=80&auto=format"
+      alt="Современный ремонт интерьера"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-overlay-bottom" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <!-- Badge -->
+      <div class="hero-badge">
+        <div class="hero-badge-dot" aria-hidden="true"></div>
+        <span class="hero-badge-text">Ремонт • Качество • Доверие</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="hero-title">
+        Ваш дом —
+        <span class="hero-title-accent">наша гордость</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-subtitle">
+        Создаём стильные и функциональные интерьеры с&nbsp;гарантией качества.
+        Ремонт квартир и домов под&nbsp;ключ — от проекта до последнего штриха.
+      </p>
+
+      <!-- Actions -->
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" id="heroCtaBtn">
+          Получить расчёт стоимости
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#portfolio" class="btn btn-outline">
+          Смотреть работы
+        </a>
+      </div>
+
+      <!-- Hero Stats -->
+      <div class="hero-stats" aria-label="Ключевые показатели">
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span data-counter="200" data-suffix="+">200+</span>
+          </div>
+          <div class="hero-stat-label">Проектов завершено</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span data-counter="7" data-suffix="">7</span><span style="color:var(--color-gold)"> лет</span>
+          </div>
+          <div class="hero-stat-label">На рынке</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span data-counter="98" data-suffix="%">98%</span>
+          </div>
+          <div class="hero-stat-label">Довольных клиентов</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span data-counter="3" data-suffix=" года">3 года</span>
+          </div>
+          <div class="hero-stat-label">Гарантия на работы</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero-scroll" aria-hidden="true" onclick="document.getElementById('marquee').scrollIntoView({behavior:'smooth'})">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+    <span class="scroll-text">Прокрутить</span>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     MARQUEE / TICKER
+     ==================================================== -->
+<div id="marquee" class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>Ремонт под ключ</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Дизайн интерьера</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Капитальный ремонт</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Санузлы и ванные</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Монтаж полов</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Электрика</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Сантехника</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Малярные работы</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Гарантия 3 года</span><div class="marquee-item-dot"></div></div>
+    <div class="marquee-item"><span>Бесплатная консультация</span><div class="marquee-item-dot"></div></div>
+  </div>
+</div>
+
+
+<!-- ====================================================
+     ABOUT SECTION
+     ==================================================== -->
+<section id="about" class="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Visual -->
+      <div class="about-visual reveal">
+        <div class="about-badge-float" aria-hidden="true">
+          <div class="about-badge-number">7</div>
+          <div class="about-badge-text">лет опыта</div>
+        </div>
+        <div class="about-image-main">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&auto=format"
+            alt="Команда Baspana Pro за работой"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-image-float" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=400&q=80&auto=format"
+            alt="Детали отделки"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content">
+        <div class="section-label reveal">О компании</div>
+        <h2 id="about-title" class="section-title reveal reveal-delay-1">
+          Мы строим <span>доверие</span><br/>с первого дня
+        </h2>
+        <p class="about-text reveal reveal-delay-2">
+          <strong>Baspana Pro</strong> — это команда профессионалов, которая уже более 7 лет
+          воплощает мечты клиентов в реальность. Мы специализируемся на комплексном ремонте
+          жилых и коммерческих помещений.
+        </p>
+        <p class="about-text reveal reveal-delay-2">
+          Наш подход прост: внимание к каждой детали, честные цены и сроки, которые мы
+          соблюдаем. Мы не просто делаем ремонт — мы создаём пространство, в котором
+          вы будете счастливы жить.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature reveal reveal-delay-3">
+            <div class="about-feature-icon" aria-hidden="true">🏆</div>
+            <div>
+              <div class="about-feature-title">Сертифицированные мастера</div>
+              <div class="about-feature-desc">Весь персонал прошёл профессиональную подготовку</div>
+            </div>
+          </div>
+          <div class="about-feature reveal reveal-delay-3">
+            <div class="about-feature-icon" aria-hidden="true">📋</div>
+            <div>
+              <div class="about-feature-title">Договор и смета</div>
+              <div class="about-feature-desc">Полная прозрачность на каждом этапе</div>
+            </div>
+          </div>
+          <div class="about-feature reveal reveal-delay-4">
+            <div class="about-feature-icon" aria-hidden="true">🛡️</div>
+            <div>
+              <div class="about-feature-title">Гарантия 3 года</div>
+              <div class="about-feature-desc">Отвечаем за качество работ официально</div>
+            </div>
+          </div>
+          <div class="about-feature reveal reveal-delay-4">
+            <div class="about-feature-icon" aria-hidden="true">⚡</div>
+            <div>
+              <div class="about-feature-title">Точные сроки</div>
+              <div class="about-feature-desc">Сдаём объекты в оговорённое время</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary reveal reveal-delay-5">
+          Узнать стоимость
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     SERVICES SECTION
+     ==================================================== -->
+<section id="services" class="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <div class="section-label">Наши услуги</div>
+      <h2 id="services-title" class="section-title">Полный спектр<br/><span>ремонтных работ</span></h2>
+      <p class="section-subtitle">От косметического обновления до капитального ремонта — берём любые задачи и доводим до идеала</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Card 1 -->
+      <article class="service-card reveal reveal-delay-1" aria-label="Ремонт под ключ">
+        <div class="service-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80&auto=format"
+            alt="Ремонт квартиры под ключ"
+            loading="lazy"
+          />
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon" aria-hidden="true">🏠</div>
+          <h3 class="service-card-title">Ремонт под ключ</h3>
+          <p class="service-card-desc">Полный цикл работ: от демонтажа и черновой до чистовой отделки. Заезжайте и живите.</p>
+          <div class="service-card-price">от 35 000 ₸/м²</div>
+          <div class="service-card-arrow">
+            <div class="arrow-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card reveal reveal-delay-2" aria-label="Дизайн-проект">
+        <div class="service-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&auto=format"
+            alt="Дизайн интерьера"
+            loading="lazy"
+          />
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon" aria-hidden="true">✏️</div>
+          <h3 class="service-card-title">Дизайн-проект</h3>
+          <p class="service-card-desc">Создаём полный дизайн-проект с 3D-визуализацией и авторским надзором.</p>
+          <div class="service-card-price">от 2 500 ₸/м²</div>
+          <div class="service-card-arrow">
+            <div class="arrow-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card reveal reveal-delay-3" aria-label="Санузлы и ванные">
+        <div class="service-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80&auto=format"
+            alt="Ремонт ванной комнаты"
+            loading="lazy"
+          />
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon" aria-hidden="true">🚿</div>
+          <h3 class="service-card-title">Санузлы и ванные</h3>
+          <p class="service-card-desc">Укладка плитки, установка сантехники, гидроизоляция, монтаж вентиляции.</p>
+          <div class="service-card-price">от 280 000 ₸</div>
+          <div class="service-card-arrow">
+            <div class="arrow-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card reveal reveal-delay-1" aria-label="Кухни">
+        <div class="service-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&auto=format"
+            alt="Ремонт кухни"
+            loading="lazy"
+          />
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon" aria-hidden="true">🍳</div>
+          <h3 class="service-card-title">Ремонт кухни</h3>
+          <p class="service-card-desc">Создаём кухни своей мечты: умная планировка, качественные материалы, красота.</p>
+          <div class="service-card-price">от 320 000 ₸</div>
+          <div class="service-card-arrow">
+            <div class="arrow-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="service-card reveal reveal-delay-2" aria-label="Электрика и сантехника">
+        <div class="service-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&auto=format"
+            alt="Электрика и инженерные системы"
+            loading="lazy"
+          />
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon" aria-hidden="true">⚡</div>
+          <h3 class="service-card-title">Инженерные системы</h3>
+          <p class="service-card-desc">Электрика, сантехника, отопление, вентиляция — монтаж под ключ.</p>
+          <div class="service-card-price">по смете</div>
+          <div class="service-card-arrow">
+            <div class="arrow-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="service-card reveal reveal-delay-3" aria-label="Коммерческие помещения">
+        <div class="service-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format"
+            alt="Ремонт офисов и коммерческих помещений"
+            loading="lazy"
+          />
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon" aria-hidden="true">🏢</div>
+          <h3 class="service-card-title">Коммерческие помещения</h3>
+          <p class="service-card-desc">Офисы, кафе, магазины — ремонт коммерческой недвижимости в короткие сроки.</p>
+          <div class="service-card-price">от 25 000 ₸/м²</div>
+          <div class="service-card-arrow">
+            <div class="arrow-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     PROCESS SECTION
+     ==================================================== -->
+<section id="process" class="process" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <div class="section-label">Как мы работаем</div>
+      <h2 id="process-title" class="section-title">Прозрачный процесс<br/><span>на каждом этапе</span></h2>
+      <p class="section-subtitle">Мы делаем ремонт предсказуемым. Вы всегда знаете, что происходит на вашем объекте</p>
+    </div>
+
+    <div class="process-timeline">
+
+      <div class="process-step active reveal reveal-delay-1">
+        <div class="process-step-num">
+          <span class="process-step-num-inner">01</span>
+        </div>
+        <h3 class="process-step-title">Замер и консультация</h3>
+        <p class="process-step-desc">Выезжаем на объект, делаем точные замеры и обсуждаем все пожелания. Бесплатно.</p>
+        <span class="process-step-tag">1–2 дня</span>
+      </div>
+
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-step-num">
+          <span class="process-step-num-inner">02</span>
+        </div>
+        <h3 class="process-step-title">Смета и договор</h3>
+        <p class="process-step-desc">Составляем детальную смету без скрытых платежей. Подписываем договор с фиксированной стоимостью.</p>
+        <span class="process-step-tag">2–3 дня</span>
+      </div>
+
+      <div class="process-step reveal reveal-delay-3">
+        <div class="process-step-num">
+          <span class="process-step-num-inner">03</span>
+        </div>
+        <h3 class="process-step-title">Ремонт под контролем</h3>
+        <p class="process-step-desc">Наш прораб контролирует каждый этап. Вы получаете фотоотчёты прямо в WhatsApp.</p>
+        <span class="process-step-tag">по плану</span>
+      </div>
+
+      <div class="process-step reveal reveal-delay-4">
+        <div class="process-step-num">
+          <span class="process-step-num-inner">04</span>
+        </div>
+        <h3 class="process-step-title">Сдача и гарантия</h3>
+        <p class="process-step-desc">Принимаем объект вместе с вами. Устраняем все замечания. Оформляем гарантийный акт.</p>
+        <span class="process-step-tag">гарантия 3 года</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     WHY US / ADVANTAGES
+     ==================================================== -->
+<section id="why" class="why-us" aria-labelledby="why-title">
+  <div class="container">
+    <div class="why-grid">
+
+      <!-- Visual -->
+      <div class="why-visual reveal">
+        <div class="why-image">
+          <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80&auto=format"
+            alt="Мастера Baspana Pro за работой"
+            loading="lazy"
+          />
+        </div>
+        <div class="why-stats-overlay">
+          <div class="why-stat">
+            <div class="why-stat-value">
+              <span data-counter="200" data-suffix="">200</span><span style="color:var(--color-gold)">+</span>
+            </div>
+            <div class="why-stat-label">Объектов</div>
+          </div>
+          <div class="why-stat">
+            <div class="why-stat-value">
+              <span data-counter="15" data-suffix="">15</span><span style="color:var(--color-gold)">+</span>
+            </div>
+            <div class="why-stat-label">Мастеров</div>
+          </div>
+          <div class="why-stat">
+            <div class="why-stat-value">
+              <span data-counter="7" data-suffix="">7</span><span style="color:var(--color-gold)"> лет</span>
+            </div>
+            <div class="why-stat-label">Опыта</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advantages -->
+      <div>
+        <div class="section-label reveal">Почему мы</div>
+        <h2 id="why-title" class="section-title reveal reveal-delay-1" style="color:var(--color-white);">
+          Нас выбирают<br/><span>снова и снова</span>
+        </h2>
+
+        <div class="why-advantages">
+          <div class="why-advantage reveal reveal-delay-2">
+            <div class="why-advantage-num" aria-hidden="true">01</div>
+            <div class="why-advantage-content">
+              <h3 class="why-advantage-title">Фиксированная цена в договоре</h3>
+              <p class="why-advantage-desc">Никаких сюрпризов и доплат в процессе. Стоимость, прописанная в договоре — окончательная.</p>
+            </div>
+          </div>
+
+          <div class="why-advantage reveal reveal-delay-3">
+            <div class="why-advantage-num" aria-hidden="true">02</div>
+            <div class="why-advantage-content">
+              <h3 class="why-advantage-title">Собственные мастера, не субподряд</h3>
+              <p class="why-advantage-desc">Все работы выполняет наша штатная бригада. Мы несём полную ответственность за результат.</p>
+            </div>
+          </div>
+
+          <div class="why-advantage reveal reveal-delay-4">
+            <div class="why-advantage-num" aria-hidden="true">03</div>
+            <div class="why-advantage-content">
+              <h3 class="why-advantage-title">Ежедневные фотоотчёты</h3>
+              <p class="why-advantage-desc">Прораб отправляет фото и видео с объекта каждый день. Вы контролируете процесс удалённо.</p>
+            </div>
+          </div>
+
+          <div class="why-advantage reveal reveal-delay-5">
+            <div class="why-advantage-num" aria-hidden="true">04</div>
+            <div class="why-advantage-content">
+              <h3 class="why-advantage-title">Гарантия 3 года на все виды работ</h3>
+              <p class="why-advantage-desc">Мы отвечаем за качество не только на словах — гарантия закреплена в акте приёмки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     PORTFOLIO SECTION
+     ==================================================== -->
+<section id="portfolio" class="portfolio" aria-labelledby="portfolio-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Наши работы</div>
+      <h2 id="portfolio-title" class="section-title">Портфолио<br/><span>реализованных проектов</span></h2>
+    </div>
+
+    <!-- Filter -->
+    <div class="portfolio-filter reveal" role="group" aria-label="Фильтр по категориям">
+      <button class="filter-btn active" data-filter="all" id="filterAll">Все работы</button>
+      <button class="filter-btn" data-filter="apartment" id="filterApartment">Квартиры</button>
+      <button class="filter-btn" data-filter="house" id="filterHouse">Дома</button>
+      <button class="filter-btn" data-filter="bathroom" id="filterBathroom">Санузлы</button>
+      <button class="filter-btn" data-filter="kitchen" id="filterKitchen">Кухни</button>
+      <button class="filter-btn" data-filter="commercial" id="filterCommercial">Коммерция</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="portfolio-grid" role="list">
+
+      <div class="portfolio-item reveal" data-category="apartment" role="listitem" aria-label="Трёхкомнатная квартира, 85 м²">
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80&auto=format"
+          alt="Ремонт трёхкомнатной квартиры в современном стиле"
+          loading="lazy"
+        />
+        <div class="portfolio-item-overlay">
+          <div class="portfolio-item-category">Квартира</div>
+          <div class="portfolio-item-title">3-комнатная, 85 м²</div>
+          <div class="portfolio-item-meta">Современный минимализм • 65 дней</div>
+        </div>
+        <div class="portfolio-expand" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-1" data-category="bathroom" role="listitem" aria-label="Ванная комната">
+        <img
+          src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80&auto=format"
+          alt="Ремонт ванной комнаты с итальянской плиткой"
+          loading="lazy"
+        />
+        <div class="portfolio-item-overlay">
+          <div class="portfolio-item-category">Санузел</div>
+          <div class="portfolio-item-title">Мастер-ванная</div>
+          <div class="portfolio-item-meta">Итальянская плитка • 21 день</div>
+        </div>
+        <div class="portfolio-expand" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-2" data-category="kitchen" role="listitem" aria-label="Кухня">
+        <img
+          src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&auto=format"
+          alt="Современная кухня с островом"
+          loading="lazy"
+        />
+        <div class="portfolio-item-overlay">
+          <div class="portfolio-item-category">Кухня</div>
+          <div class="portfolio-item-title">Кухня с островом</div>
+          <div class="portfolio-item-meta">Скандинавский стиль • 18 дней</div>
+        </div>
+        <div class="portfolio-expand" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="house" role="listitem" aria-label="Частный дом">
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80&auto=format"
+          alt="Ремонт частного дома"
+          loading="lazy"
+        />
+        <div class="portfolio-item-overlay">
+          <div class="portfolio-item-category">Частный дом</div>
+          <div class="portfolio-item-title">Дом 180 м², Алматы</div>
+          <div class="portfolio-item-meta">Классика + современность • 4 месяца</div>
+        </div>
+        <div class="portfolio-expand" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-1" data-category="apartment" role="listitem" aria-label="Студия">
+        <img
+          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&auto=format"
+          alt="Ремонт квартиры-студии"
+          loading="lazy"
+        />
+        <div class="portfolio-item-overlay">
+          <div class="portfolio-item-category">Студия</div>
+          <div class="portfolio-item-title">Квартира-студия, 38 м²</div>
+          <div class="portfolio-item-meta">Loft стиль • 45 дней</div>
+        </div>
+        <div class="portfolio-expand" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-2" data-category="commercial" role="listitem" aria-label="Офис">
+        <img
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format"
+          alt="Ремонт современного офиса"
+          loading="lazy"
+        />
+        <div class="portfolio-item-overlay">
+          <div class="portfolio-item-category">Офис</div>
+          <div class="portfolio-item-title">Open-space офис, 200 м²</div>
+          <div class="portfolio-item-meta">Корпоративный стиль • 35 дней</div>
+        </div>
+        <div class="portfolio-expand" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     TESTIMONIALS
+     ==================================================== -->
+<section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <div class="section-label">Отзывы</div>
+      <h2 id="testimonials-title" class="section-title">Что говорят<br/><span>наши клиенты</span></h2>
+      <p class="section-subtitle">Более 200 семей доверили нам свой дом. Вот что они говорят о нашей работе</p>
+    </div>
+
+    <div class="testimonials-slider">
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <article class="testimonial-card reveal">
+          <div class="testimonial-rating" aria-label="Оценка: 5 из 5">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">
+            «Очень довольны результатом! Ребята сделали ремонт в нашей 3-комнатной квартире за 65 дней, всё чётко по договору. Никаких переплат, всё как обещали.»
+          </p>
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-author">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Айгерим С."
+              class="testimonial-avatar"
+              loading="lazy"
+              width="48" height="48"
+            />
+            <div>
+              <div class="testimonial-name">Айгерим С.</div>
+              <div class="testimonial-role">Ремонт 3-комн. квартиры</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-rating" aria-label="Оценка: 5 из 5">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">
+            «Baspana Pro — лучший выбор для ремонта! Сделали кухню и санузел. Каждый день присылали фото с объекта. Качество отделки на высшем уровне.»
+          </p>
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-author">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Данияр М."
+              class="testimonial-avatar"
+              loading="lazy"
+              width="48" height="48"
+            />
+            <div>
+              <div class="testimonial-name">Данияр М.</div>
+              <div class="testimonial-role">Ремонт кухни и санузла</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-rating" aria-label="Оценка: 5 из 5">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">
+            «Заказывали ремонт под ключ. Всё выполнено чисто, аккуратно, в срок. Ни одного пустого обещания. Обязательно обратимся снова и рекомендуем друзьям!»
+          </p>
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-author">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Мадина К."
+              class="testimonial-avatar"
+              loading="lazy"
+              width="48" height="48"
+            />
+            <div>
+              <div class="testimonial-name">Мадина К.</div>
+              <div class="testimonial-role">Ремонт под ключ, 90 м²</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-rating" aria-label="Оценка: 5 из 5">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">
+            «Делали офис 200 квадратов. Быстро, качественно, с учётом всех наших пожеланий. Менеджер всегда был на связи. Рекомендую для коммерческих объектов!»
+          </p>
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-author">
+            <img
+              src="https://randomuser.me/api/portraits/men/52.jpg"
+              alt="Алибек Т."
+              class="testimonial-avatar"
+              loading="lazy"
+              width="48" height="48"
+            />
+            <div>
+              <div class="testimonial-name">Алибек Т.</div>
+              <div class="testimonial-role">Ремонт офиса</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal reveal-delay-4">
+          <div class="testimonial-rating" aria-label="Оценка: 5 из 5">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">
+            «Ремонт частного дома в 180 м² — сложная задача. Команда справилась отлично: всё продумано до мелочей, красиво и функционально. Живём и радуемся!»
+          </p>
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-author">
+            <img
+              src="https://randomuser.me/api/portraits/women/25.jpg"
+              alt="Зарина Н."
+              class="testimonial-avatar"
+              loading="lazy"
+              width="48" height="48"
+            />
+            <div>
+              <div class="testimonial-name">Зарина Н.</div>
+              <div class="testimonial-role">Ремонт дома 180 м²</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls" aria-label="Управление слайдером">
+      <button id="sliderPrev" class="slider-btn" aria-label="Предыдущий отзыв">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+      </button>
+
+      <div class="slider-dots" role="tablist" aria-label="Переключатель слайдов">
+        <div class="slider-dot active" role="tab" aria-selected="true" aria-label="Слайд 1"></div>
+        <div class="slider-dot" role="tab" aria-selected="false" aria-label="Слайд 2"></div>
+        <div class="slider-dot" role="tab" aria-selected="false" aria-label="Слайд 3"></div>
+      </div>
+
+      <button id="sliderNext" class="slider-btn" aria-label="Следующий отзыв">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CTA BANNER
+     ==================================================== -->
+<section class="cta-banner" aria-label="Призыв к действию">
+  <div class="cta-banner-bg" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80&auto=format"
+      alt=""
+      loading="lazy"
+    />
+  </div>
+  <div class="cta-banner-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-banner-content reveal">
+      <h2 class="cta-banner-title">
+        Готовы начать<br/>
+        <span>ваш проект?</span>
+      </h2>
+      <p class="cta-banner-text">
+        Оставьте заявку и получите бесплатный выезд специалиста, детальную смету
+        и консультацию по материалам. Без обязательств.
+      </p>
+      <div class="cta-banner-actions">
+        <a href="#contact" class="btn btn-primary">
+          Получить смету бесплатно
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="tel:+77001234567" class="btn btn-outline">
+          Позвонить сейчас
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FAQ SECTION
+     ==================================================== -->
+<section id="faq" class="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <div class="section-label">FAQ</div>
+      <h2 id="faq-title" class="section-title" style="color:var(--color-white);">Часто задаваемые<br/><span>вопросы</span></h2>
+      <p class="section-subtitle">Отвечаем на самые популярные вопросы о нашей работе</p>
+    </div>
+
+    <div class="faq-grid">
+
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Сколько стоит ремонт квартиры под ключ?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Стоимость зависит от площади, сложности работ и выбранных материалов. Ориентировочно: косметический ремонт — от 15 000 ₸/м², капитальный под ключ — от 35 000 ₸/м². Точную смету рассчитаем бесплатно после замера.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Как долго длится ремонт квартиры?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Зависит от объёма работ. Студия — 30–45 дней, 2-комнатная — 50–70 дней, 3-комнатная — 60–90 дней. Сроки фиксируются в договоре и соблюдаются.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-3">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Предоставляете ли вы гарантию на работы?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Да, мы предоставляем официальную гарантию 3 года на все выполненные работы. Это закрепляется в гарантийном акте при сдаче объекта. Если что-то выйдет из строя по нашей вине — устраним бесплатно.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-4">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Нужно ли мне присутствовать во время ремонта?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Нет, не обязательно. Ваш персональный прораб будет управлять всем процессом и ежедневно отправлять фото/видео в мессенджер. Вы можете следить за ходом ремонта удалённо.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Вы закупаете материалы или я покупаю сам?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Мы работаем в обоих форматах. Можем взять закупку материалов на себя (у нас скидки от партнёров), или работать с материалами заказчика. Обсуждаем на этапе заключения договора.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Могут ли измениться сроки или стоимость в процессе?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Стоимость и сроки фиксируются в договоре. Изменения возможны только если клиент меняет объём работ или выбирает другие материалы — и только с письменного согласия обеих сторон.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-3">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Как происходит оплата?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Оплата поэтапная: 30% аванс при подписании договора, 40% после завершения черновых работ, 30% при сдаче объекта. Возможна рассрочка — уточняйте у менеджера.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-4">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-question-text">Работаете ли вы по всему городу?</span>
+          <div class="faq-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Да, мы работаем по всему городу и пригороду. Для крупных объектов за пределами города уточняйте условия у менеджера — возможно выгодное предложение.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CONTACT SECTION
+     ==================================================== -->
+<section id="contact" class="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="section-label reveal">Связаться с нами</div>
+        <p class="contact-tagline reveal reveal-delay-1">Начнём ваш проект?</p>
+        <h2 id="contact-title" class="contact-title reveal reveal-delay-1">
+          Оставьте заявку —<br/>мы <span>перезвоним</span><br/>в течение часа
+        </h2>
+        <p class="contact-text reveal reveal-delay-2">
+          Бесплатный выезд специалиста для замера и консультации. Детальная смета в течение 24 часов.
+        </p>
+
+        <div class="contact-links reveal reveal-delay-3">
+          <a href="tel:+77001234567" class="contact-link" id="contactPhone" aria-label="Позвонить нам">
+            <div class="contact-link-icon" aria-hidden="true">📞</div>
+            <div>
+              <div class="contact-link-label">Телефон</div>
+              <div class="contact-link-value">+7 (700) 123-45-67</div>
+            </div>
+          </a>
+          <a href="https://wa.me/77001234567" class="contact-link" id="contactWhatsapp" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+            <div class="contact-link-icon" aria-hidden="true">💬</div>
+            <div>
+              <div class="contact-link-label">WhatsApp</div>
+              <div class="contact-link-value">Написать в WhatsApp</div>
+            </div>
+          </a>
+          <a href="https://t.me/baspana_pro" class="contact-link" id="contactTelegram" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+            <div class="contact-link-icon" aria-hidden="true">✈️</div>
+            <div>
+              <div class="contact-link-label">Telegram</div>
+              <div class="contact-link-value">@baspana_pro</div>
+            </div>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <div class="contact-link-icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="contact-link-label">Адрес</div>
+              <div class="contact-link-value">Алматы, ул. Примерная, 1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form reveal reveal-delay-2">
+        <div id="formContent">
+          <h3 class="form-title">Оставить заявку</h3>
+          <p class="form-subtitle">Заполните форму — мы свяжемся с вами в течение часа</p>
+
+          <form id="contactForm" novalidate aria-label="Форма обратной связи">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inputName" class="form-label">Ваше имя *</label>
+                <input
+                  type="text"
+                  id="inputName"
+                  name="name"
+                  class="form-input"
+                  placeholder="Иван Иванов"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputPhone" class="form-label">Телефон *</label>
+                <input
+                  type="tel"
+                  id="inputPhone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+7 (___) ___-__-__"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputService" class="form-label">Тип услуги</label>
+              <select id="inputService" name="service" class="form-select">
+                <option value="">— Выберите услугу —</option>
+                <option value="turnkey">Ремонт под ключ</option>
+                <option value="design">Дизайн-проект</option>
+                <option value="bathroom">Санузел / Ванная</option>
+                <option value="kitchen">Кухня</option>
+                <option value="engineering">Инженерные системы</option>
+                <option value="commercial">Коммерческое помещение</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="inputArea" class="form-label">Площадь объекта</label>
+              <input
+                type="text"
+                id="inputArea"
+                name="area"
+                class="form-input"
+                placeholder="Например: 75 м²"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="inputMessage" class="form-label">Ваши пожелания</label>
+              <textarea
+                id="inputMessage"
+                name="message"
+                class="form-textarea"
+                placeholder="Расскажите о вашем проекте..."
+                rows="4"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
+              Отправить заявку
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+
+            <p class="form-note" aria-live="polite">
+              Нажимая кнопку, вы соглашаетесь на обработку персональных данных
+            </p>
+          </form>
+        </div>
+
+        <!-- Success state -->
+        <div id="formSuccess" class="form-success" role="alert" aria-live="assertive">
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h3 class="success-title">Заявка отправлена!</h3>
+          <p class="success-text">Наш специалист свяжется с вами в течение одного часа. Спасибо за доверие!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FOOTER
+     ==================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <img
+          src="images/logo.png"
+          alt="Baspana Pro"
+          class="footer-logo"
+          loading="lazy"
+          onerror="this.src='images/logo.svg'; this.onerror=null;"
+        />
+        <p class="footer-desc">
+          Профессиональный ремонт квартир и домов под ключ. Ремонт • Качество • Доверие.
+        </p>
+        <div class="footer-social" aria-label="Социальные сети">
+          <a href="https://instagram.com/baspana_pro" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+            📸
+          </a>
+          <a href="https://wa.me/77001234567" class="social-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+            💬
+          </a>
+          <a href="https://t.me/baspana_pro" class="social-btn" target="_blank" rel="noopener" aria-label="Telegram">
+            ✈️
+          </a>
+          <a href="https://youtube.com/@baspana_pro" class="social-btn" target="_blank" rel="noopener" aria-label="YouTube">
+            ▶️
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="footer-col-title">Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#process">Этапы работы</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#testimonials">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="footer-col-title">Услуги</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Ремонт под ключ</a></li>
+          <li><a href="#services">Дизайн-проект</a></li>
+          <li><a href="#services">Ванные и санузлы</a></li>
+          <li><a href="#services">Ремонт кухни</a></li>
+          <li><a href="#services">Инженерные системы</a></li>
+          <li><a href="#services">Коммерческие объекты</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacts -->
+      <div>
+        <h4 class="footer-col-title">Контакты</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon" aria-hidden="true">📞</div>
+          <div class="footer-contact-text">
+            <a href="tel:+77001234567">+7 (700) 123-45-67</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon" aria-hidden="true">📧</div>
+          <div class="footer-contact-text">
+            <a href="mailto:info@baspana-pro.kz">info@baspana-pro.kz</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon" aria-hidden="true">📍</div>
+          <div class="footer-contact-text">Алматы, ул. Примерная, 1</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon" aria-hidden="true">🕐</div>
+          <div class="footer-contact-text">
+            Пн–Пт: 9:00–19:00<br/>
+            Сб–Вс: 10:00–17:00
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        © 2024 <span>Baspana Pro</span>. Все права защищены.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ====================================================
+     LIGHTBOX
+     ==================================================== -->
+<div id="lightbox" class="lightbox" role="dialog" aria-label="Просмотр изображения" aria-modal="true">
+  <button id="lightboxClose" class="lightbox-close" aria-label="Закрыть">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </svg>
+  </button>
+  <img id="lightboxImg" class="lightbox-img" src="" alt="Фото проекта" />
+</div>
+
+
+<!-- ====================================================
+     FAB — Floating Action Buttons
+     ==================================================== -->
+<div class="fab-container" aria-label="Быстрый контакт">
+  <button id="fabTop" class="fab-btn fab-top" data-tooltip="Наверх" aria-label="Прокрутить наверх">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+  <a href="https://t.me/baspana_pro" class="fab-btn fab-telegram" data-tooltip="Telegram" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.7 8.12c-.12.54-.45.67-.91.42l-2.52-1.86-1.22 1.17c-.13.13-.25.25-.51.25l.18-2.57 4.65-4.2c.2-.18-.04-.28-.31-.1L7.4 15.17 5.03 14.4c-.53-.17-.54-.53.11-.78l9.62-3.71c.44-.16.82.11.88.89z"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/77001234567" class="fab-btn fab-whatsapp" data-tooltip="WhatsApp" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
